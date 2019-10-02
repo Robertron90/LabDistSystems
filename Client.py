@@ -14,5 +14,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
       while data:
         s.send(data)
         sended += 1024
-        print(sended/os.path.getsize(FILE))
+        print(100*sended/os.path.getsize(FILE) if sended/os.path.getsize(FILE) < 1 else 100)
         data = f.read(1024)
