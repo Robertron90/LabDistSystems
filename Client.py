@@ -2,11 +2,11 @@ import socket, os, sys
 
 FILE = sys.argv[1]
 HOST = sys.argv[2]
-PORT = sys.argv[3]
+PORT = int(sys.argv[3])
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
-    s.send(FILE.decode())
+    s.send(FILE.encode())
 
     with open(FILE, 'rb') as f:
       data = f.read(1024)
