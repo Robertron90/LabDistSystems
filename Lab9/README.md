@@ -1,3 +1,4 @@
+```
 ## rs.config()
 {
         "_id" : "rs0",
@@ -62,7 +63,9 @@
                 "replicaSetId" : ObjectId("5dbc916f4fb2580b5cdbe488")
         }
 }
+```
 
+```
 ## rs.status()
 {
         "set" : "rs0",
@@ -209,5 +212,6 @@
         },
         "operationTime" : Timestamp(1572640159, 1)
 }
+```
 
-![Image]{chat.jpg}
+![Image]{https://github.com/Robertron90/LabDistSystems/master/Lab9/chat.jpg}
